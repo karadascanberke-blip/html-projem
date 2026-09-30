@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Echoes | Global Trap & UK Drill</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-family: 'Oswald', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #ff0055;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ccc;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff0055;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(45deg, #000000, #1a000d);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .hero h1 span {
+            color: #ff0055;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #aaa;
+            max-width: 600px;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            background-color: #ff0055;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(255, 0, 85, 0.4);
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+
+        .btn:hover {
+            background-color: #ff3377;
+            box-shadow: 0 0 30px rgba(255, 0, 85, 0.7);
+            transform: translateY(-3px);
+        }
+
+        .tracks {
+            padding: 80px 50px;
+            background-color: #111;
+        }
+
+        .tracks h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .track-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .track-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border-left: 4px solid #ff0055;
+        }
+
+        .track-card:hover {
+            transform: scale(1.05);
+        }
+
+        .track-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .track-genre {
+            font-size: 0.9rem;
+            color: #ff0055;
+            margin-bottom: 15px;
+        }
+
+        .play-btn {
+            background: none;
+            border: 1px solid #ff0055;
+            color: #ff0055;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .play-btn:hover {
+            background: #ff0055;
+            color: #fff;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            header { flex-direction: column; gap: 15px; padding: 15px; }
+            nav ul { gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">URBAN ECHOES</div>
+        <nav>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Beatler</a></li>
+                <li><a href="#">Sanatçılar</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Global Trap & <span>UK Drill</span></h1>
+        <p>En sert beatler, karanlık melodiler ve durdurulamaz ritimler. Sokakların yankısını hisset.</p>
+        <button class="btn">Şimdi Dinle</button>
+    </section>
+
+    <section class="tracks">
+        <h2>Popüler Parçalar</h2>
+        <div class="track-grid">
+            <div class="track-card">
+                <div class="track-title">Midnight Shadows</div>
+                <div class="track-genre">UK Drill</div>
+                <button class="play-btn">Oynat</button>
+            </div>
+            <div class="track-card">
+                <div class="track-title">Neon Streets</div>
+                <div class="track-genre">Dark Trap</div>
+                <button class="play-btn">Oynat</button>
+            </div>
+            <div class="track-card">
+                <div class="track-title">London 2 Tokyo</div>
+                <div class="track-genre">UK Drill / Grime</div>
+                <button class="play-btn">Oynat</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const buttons = document.querySelectorAll('.play-btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const isPlaying = this.innerText === 'Çalıyor...';
+                
+                buttons.forEach(b => {
+                    b.innerText = 'Oynat';
+                    b.style.background = 'none';
+                    b.style.color = '#ff0055';
+                });
+
+                if (!isPlaying) {
+                    this.innerText = 'Çalıyor...';
+                    this.style.background = '#ff0055';
+                    this.style.color = '#fff';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
